@@ -1,0 +1,41 @@
+POST http://127.0.0.1:8000/api/v1/auth/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name":"felipe",
+    "email":"felipe@mail.com",
+    "password":"felipe12345",
+    "c_password":"felipe12345"
+}
+
+### Login
+POST http://127.0.0.1:8000/api/v1/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email":"felipe@mail.com",
+    "password": "felipe12345"
+}
+
+### Perfil
+GET http://127.0.0.1:8000/api/user
+Accept: application/json
+Authorization: Bearer 1|Ez0jfyP2bK6a9PVpTfSN3DTkj2EqVkylzUu9MiFUe0d19a0c
+
+### Perfil2
+GET http://127.0.0.1:8000/api/v1/auth/perfil
+Accept: application/json
+Authorization: Bearer 6|zUtk7TsYsLVH6xa58CPSKjNuDnm8dxhmiCo2b63D384f9aeb
+
+### Logout
+POST http://127.0.0.1:8000/api/v1/auth/logout
+Accept: application/json
+Authorization: Bearer 6|zUtk7TsYsLVH6xa58CPSKjNuDnm8dxhmiCo2b63D384f9aeb
+
+
+
+
+
+
