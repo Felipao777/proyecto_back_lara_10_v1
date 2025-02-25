@@ -16,7 +16,7 @@ Content-Type: application/json
 
 {
     "email":"felipe@mail.com",
-    "password": "felipe12345"
+    "password": "felipe123457"
 }
 
 ### Perfil
@@ -27,14 +27,12 @@ Authorization: Bearer 1|Ez0jfyP2bK6a9PVpTfSN3DTkj2EqVkylzUu9MiFUe0d19a0c
 ### Perfil2
 GET http://127.0.0.1:8000/api/v1/auth/perfil
 Accept: application/json
-Authorization: Bearer 6|zUtk7TsYsLVH6xa58CPSKjNuDnm8dxhmiCo2b63D384f9aeb
+Authorization: Bearer 41|ER5T2z14wnwjDe1A0NJnnio2CfajDmMe8zzrug2G22b97fea
 
 ### Logout
 POST http://127.0.0.1:8000/api/v1/auth/logout
 Accept: application/json
-Authorization: Bearer 6|zUtk7TsYsLVH6xa58CPSKjNuDnm8dxhmiCo2b63D384f9aeb
-
-
+Authorization: Bearer 27|bEIxDVeDrIIDniijDV9sdLDWqsvmxos37zm0KZnqe964ef28
 
 
 
