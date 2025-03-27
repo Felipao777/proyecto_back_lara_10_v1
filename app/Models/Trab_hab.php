@@ -10,9 +10,9 @@ class Trab_hab extends Model
     use HasFactory;
     protected $table='trabajador_habilitados';
     protected $primaryKey='id_trabajador_hab';
-
+   
     public function empresa(){
-        return $this -> belongsTo(Empresa::class);
+        return $this -> belongsTo(Empresa::class,'id_empresa');
     }
     public function solicitantes(){
         return $this -> hasMany(Solicitante::class);

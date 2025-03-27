@@ -1,0 +1,40 @@
+### 
+GET http://127.0.0.1:8000/api/trab_hab
+
+### Guardar trabajador habilitado
+POST http://127.0.0.1:8000/api/trab_hab
+Accept: application/json
+Content-Type: application/json
+
+{
+    "pat_trabajador_hab":"CUbi",
+    "id_empresa":1,
+    "ci_trabajador_hab":444   
+}
+### mostrar trabajador hab 3
+GET http://127.0.0.1:8000/api/trab_hab/3
+Accept: application/json
+### mostrar trabajador hab 50
+GET http://127.0.0.1:8000/api/trab_hab/50
+Accept: application/json
+
+### modificar
+PUT http://127.0.0.1:8000/api/trab_hab/3
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id_empresa": 1,
+  "codigo_trabajador_hab": null,
+  "ci_trabajador_hab": null,
+  "pat_trabajador_hab": "Rojas",
+  "mat_trabajador_hab": null,
+  "nom_trabajador_hab": null,
+  "sexo_trabajador_hab": null,
+  "profesion_trabajador_hab": null,
+  "area_trabajador_hab": null,
+  "cargo_trabajador_hab": null
+}
+
+### eliminar
+DELETE http://127.0.0.1:8000/api/trab_hab/25

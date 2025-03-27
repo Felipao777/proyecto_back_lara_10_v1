@@ -1,0 +1,25 @@
+GET http://127.0.0.1:8000/api/empresa
+
+###
+POST http://127.0.0.1:8000/api/empresa
+Accept: application/json
+Content-Type: application/json
+
+{
+    "nombre_empresa":"Tigo",
+    "region_empresa":"La Paz"    
+}
+###
+GET http://127.0.0.1:8000/api/empresa/16
+
+###
+PUT http://127.0.0.1:8000/api/empresa/11
+Accept: application/json
+Content-Type: application/json
+
+{
+    "nombre_empresa":"Ramos",
+    "region_empresa":"benis"    
+}
+###
+DELETE http://127.0.0.1:8000/api/empresa/4
